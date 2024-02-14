@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zenexten</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <main class="bg_main">
+    <header class="header_main">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="logo">
+              <img src="./assets/images/Logo.png" alt="logo" width="100">
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="weather">
+              <div class="date_time">
+                <span class="time"> <time>15:20</time></span>
+                <span class="date">Wed, January 30</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end weather_info gap-4">
+                <div class="d-flex justify-content-between align-items-center gap-2">
+                  <span class="deg me-4">30 <sup><img src="./assets/images/Circle.png" alt="icon" width="12"></sup>
+                    C</span>
+                  <img src="./assets/images/Wather.png" alt="icon" width="30">
+                </div>
+                <div class="Vancouver d-flex justify-content-between align-items-center gap-2">
+                  <img src="./assets/images/Location.png" alt="icon" width="15">
+                  <span>Vancouver</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main_sec">
+      <div class="container-fluid">
+        <form action="" class="position-relative main_form">
+          <input type="search" placeholder="Search">
+          <span class="position-absolute icon_search"><i class="bi bi-search"></i></span>
+        </form>
+      </div>
+    </section>
+    <footer class="pb-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="btns d-flex align-items-center gap-2">
+              <div class="dropdown">
+                <button class="btn btn-secondary" type="button" onclick="toggleDropdown('dropdownMenu1')">
+                  <i class="bi bi-plus"></i> Tasks
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu1">
+                  <div class="dropdown-header">
+                    <div class="d-flex mb-lg-4 mb-2 align-items-center justify-content-between">
+                      <h4 class="heading m-0">Tasks</h4>
+                      <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="search mb-3">
+                      <form action="" class="position-relative main_form dropdown_form">
+                        <input type="text" placeholder="Search in Tasks">
+                        <span class="position-absolute icon_search"><i class="bi bi-search"></i></span>
+                      </form>
+                    </div>
+                    <div class="setting mb-2 d-flex align-items-center gap-2 justify-content-end">
+                      <span>Most recent Tasks</span>
+                      <img src="./assets/images/Calque.png" alt="icon">
+                      <i class="bi bi-pencil-fill text-black"></i>
+                    </div>
+                  </div>
+                  <div class="dropdown_body">
+                    <ul class="list-unstyled notes_list">
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                    </ul>
+                    <div class="add_note">
+                      <a class="btn btn-secondary me-2"><i class="bi bi-plus"></i></a>
+                      <span>Add a new note</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary" type="button" onclick="toggleDropdown('dropdownMenu2')">
+                  <i class="bi bi-plus"></i> Notes
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu2">
+                  <div class="dropdown-header">
+                    <div class="d-flex mb-lg-4 mb-2 align-items-center justify-content-between">
+                      <h4 class="heading m-0">Notes</h4>
+                      <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="search mb-3">
+                      <form action="" class="position-relative main_form dropdown_form">
+                        <input type="text" placeholder="Search in notes">
+                        <span class="position-absolute icon_search"><i class="bi bi-search"></i></span>
+                      </form>
+                    </div>
+                    <div class="setting mb-2 d-flex align-items-center gap-2 justify-content-end">
+                      <span>Most recent Notes</span>
+                      <img src="./assets/images/Calque.png" alt="icon">
+                      <i class="bi bi-pencil-fill text-black"></i>
+                    </div>
+                  </div>
+                  <div class="dropdown_body">
+                    <ul class="list-unstyled notes_list">
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                    </ul>
+                    <div class="add_note">
+                      <a class="btn btn-secondary me-2"><i class="bi bi-plus"></i></a>
+                      <span>Add a new note</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary" type="button" onclick="toggleDropdown('dropdownMenu3')">
+                  <i class="bi bi-plus"></i> Bookmarks
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu3">
+                  <div class="dropdown-header">
+                    <div class="d-flex mb-lg-4 mb-2 align-items-center justify-content-between">
+                      <h4 class="heading m-0">Bookmarks</h4>
+                      <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="search mb-3">
+                      <form action="" class="position-relative main_form dropdown_form">
+                        <input type="text" placeholder="Search in Bookmarks">
+                        <span class="position-absolute icon_search"><i class="bi bi-search"></i></span>
+                      </form>
+                    </div>
+                    <div class="setting mb-2 d-flex align-items-center gap-2 justify-content-end">
+                      <span>Most recent Bookmarks</span>
+                      <img src="./assets/images/Calque.png" alt="icon">
+                      <i class="bi bi-pencil-fill text-black"></i>
+                    </div>
+                  </div>
+                  <div class="dropdown_body">
+                    <ul class="list-unstyled notes_list">
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                    </ul>
+                    <div class="add_note">
+                      <a class="btn btn-secondary me-2"><i class="bi bi-plus"></i></a>
+                      <span>Add a new note</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary Circle" type="button" onclick="toggleDropdown('dropdownMenu4')">
+                  <img src="./assets/images/Setting.png" alt="icon" width="25">
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu4">
+                  <div class="dropdown-header">
+                    <div class="d-flex mb-lg-4 mb-2 align-items-center justify-content-between">
+                      <h4 class="heading m-0">Setting</h4>
+                      <i class="bi bi-chevron-down"></i>
+                    </div>
+                  </div>
+                  <div class="dropdown_body">
+                    <ul class="list-unstyled notes_list">
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                      <li>
+                        <div class="d-flex align-items-center mb-2 justify-content-between">
+                          <h4 class="m-0">TItle goes here</h4>
+                          <span><time>29-01-2024</time></span>
+                        </div>
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="pages">
+              <ul class="list-unstyled d-flex gap-2">
+                <li><a href="">About</a>&nbsp; . </li>
+                <li><a href="">Contact</a>&nbsp; .</li>
+                <li><a href="">Privacy</a>&nbsp; .</li>
+                <li><a href="">Terms</a>&nbsp; .</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Copyright m-auto">
+        <p class="text-white text-center m-0">Copyright © 2024 Zenexten.com, All rights reserved. </p>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
